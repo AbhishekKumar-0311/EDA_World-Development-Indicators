@@ -6,15 +6,20 @@ import plotly.express as px
 
 import pandas as pd
 
+########### Initiate the app
+
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 app.title = 'Hello'
+
+########### Define your variables
 
 df = pd.read_csv('https://plotly.github.io/datasets/country_indicators.csv')
 
 available_indicators = df['Indicator Name'].unique()
+
+########### Set up the layout
 
 app.layout = html.Div([
     html.Div([
