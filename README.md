@@ -1,2 +1,2 @@
-# EDA_National-Achievement-Survey
- Exploratory Analysis of the Achievement Survey  and deploying the Plotly Dash app on Heroku
+# EDA_World-Development-Indicators
+Exploratory Analysis of the World Development and deploying the Plotly Dash app on Heroku.
